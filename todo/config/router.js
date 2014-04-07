@@ -40,4 +40,5 @@ router.get('/').to('Main.index');
 // });
 
 router.resource('todos');
+router.resource('steps');
 exports.router = router;
