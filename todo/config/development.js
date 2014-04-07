@@ -14,23 +14,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
-*/
+ */
 
 var config = {
-  appName: 'Geddy App (development)'
-, detailedErrors: true
-, debug: true
-, hostname: null
-, port: 4000
-, model: {
-    defaultAdapter: 'filesystem'
-  }
-, sessions: {
-    store: 'filesystem'
-  , filename: '_session_store.json'
-  , key: 'sid'
-  , expiry: 14 * 24 * 60 * 60
-  }
+    appName: 'Geddy App (development)',
+    detailedErrors: true,
+    debug: true,
+    hostname: null,
+    port: 4000,
+    model: {
+        defaultAdapter: 'filesystem'
+    }, sessions: {
+        store: 'filesystem',
+        filename: '_session_store.json',
+        key: 'sid',
+        expiry: 14 * 24 * 60 * 60
+    }
 };
 
 module.exports = config;
