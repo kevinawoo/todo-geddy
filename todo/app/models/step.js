@@ -29,6 +29,18 @@ var Step = function () {
      };
      */
 
+    // validation
+    this.validatesPresent('title');
+    this.validatesLength('title', {min: 5});
+
+    this.validatesWithFunction('status', function (status) {
+        return status == 'open' || status == 'done';
+    }, {message: "status needs to be 'open' or 'done'."});
+
+
+    // association
+    this.belongsTo('Todo');
+
 };
 
 /*
